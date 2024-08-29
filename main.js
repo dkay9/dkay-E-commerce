@@ -1,3 +1,4 @@
+/* Index HTML */
 // Grab html elements for reference
 const bar = document.getElementById('bar')
 const close = document.getElementById('close')
@@ -14,4 +15,16 @@ if(close){
     close.addEventListener('click', () => {
         nav.classList.remove('active')
     })
+}
+
+/* Single Product HTML */
+// Grab html elements for reference
+let mainImg = document.getElementById('mainImg')
+let smallimg = document.getElementsByClassName('small-img')
+
+// When clicked show small image in main image section
+for(let i = 0; i < smallimg.length; i++){
+    smallimg[i].onclick = function() {
+        mainImg.src = this.src
+    }
 }
