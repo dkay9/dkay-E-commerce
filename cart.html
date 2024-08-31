@@ -28,10 +28,10 @@
                     <a href="about.html">About</a>
                 </li>
                 <li>
-                    <a class="active" href="contact.html">Contact</a>
+                    <a href="contact.html">Contact</a>
                 </li>
                 <li>
-                    <a href="cart.html" id="lg-bag"><i class="fa-solid fa-bag-shopping"></i></a>
+                    <a class="active" href="cart.html" id="lg-bag"><i class="fa-solid fa-bag-shopping"></i></a>
                 </li>
                 <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
             </ul>
@@ -49,74 +49,72 @@
         <p>LEAVE A MESSAGE. We'd love to hear from you!</p>
     </section>
 
-    <section id="contact-details" class="section-p1">
-        <div class="details">
-            <span>GET IN TOUCH</span>
-            <h2>Visit one of our agency locations or contact us today</h2>
-            <h3>Head Office</h3>
-            <div>
-                <ul>
-                    <li>
-                        <i class="fa-regular fa-map"></i>
-                        <p>63 Urban street Pluto MANIA Topanga</p>
-                    </li>
-                    <li>
-                        <i class="fa-regular fa-envelope"></i>
-                        <p>contact@example.com</p>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-phone"></i>
-                        <p>01 222 3333</p>
-                    </li>
-                    <li>
-                        <i class="fa-regular fa-clock"></i>
-                        <p>Monday - Saturday: 9.00am - 16.00pm</p>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3939.8681989400457!2d7.404512172079113!3d9.07576996836018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e75c21b2088e1%3A0x46ae3d15e0e0e34c!2sLife%20Camp%20Roundabout!5e0!3m2!1sen!2sng!4v1725086913984!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+    <section id="cart" class="section-p1">
+        <table>
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Subtotal</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#"><i class="fa-regular fa-circle-xmark"></i></a></td>
+                    <td><img src="img/products/f1.jpg" alt=""></td>
+                    <td>Cartoon Astronaut T-Shirts</td>
+                    <td>$200.18</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$200.31</td>
+                </tr>
+                <tr>
+                    <td><a href="#"><i class="fa-regular fa-circle-xmark"></i></a></td>
+                    <td><img src="img/products/f2.jpg" alt=""></td>
+                    <td>Slime Ball T-Shirts</td>
+                    <td>$125.35</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$200.31</td>
+                </tr>
+                <tr>
+                    <td><a href="#"><i class="fa-regular fa-circle-xmark"></i></a></td>
+                    <td><img src="img/products/f3.jpg" alt=""></td>
+                    <td>Broke & Rich T-Shirts</td>
+                    <td>$175.00</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$200.31</td>
+                </tr>
+            </tbody>
+        </table>
     </section>
 
-    <section id="form-details">
-        <form action="">
-            <span>LEAVE A MESSAGE</span>
-            <h2>We love to hear from you</h2>
-            <input type="text" placeholder="Your Name">
-            <input type="text" placeholder="E-mail">
-            <input type="text" placeholder="Subject">
-            <textarea name="" id="" rows="10" cols="30" placeholder="Your Message"></textarea>
-            <button class="normal">Submit</button>
-        </form>
-
-        <div class="people">
+    <section id="cart-add" class="section-p1">
+        <div id="coupon">
+            <h3>Apply Coupon</h3>
             <div>
-                <img src="img/people/1.png" alt="">
-                <p><span>John Doe</span> Senior Marketing Manager <br> Phone: +000 111 222 3333 <br> Email: contact@example.com</p>
-            </div>
-            <div>
-                <img src="img/people/2.png" alt="">
-                <p><span>John Doe</span> Senior Marketing Manager <br> Phone: +01 222 3333 <br> Email: contact@example.com</p>
-            </div>
-            <div>
-                <img src="img/people/3.png" alt="">
-                <p><span>John Doe</span> Senior Marketing Manager <br> Phone: +123 222 3333 <br> Email: contact@example.com</p>
+                <input type="text" placeholder="Enter Your Coupon">
+                <button class="normal">Apply</button>
             </div>
         </div>
-    </section>
-
-    <section id="newsletter" class="section-p1 section-m1">
-        <div class="newstext">
-            <h4>Sign Up For Newsletters</h4>
-            <p>
-                Get E-mail updates about our latest shop and <span>special offers</span>.
-            </p>
-        </div>
-        <div class="form">
-            <input type="text" placeholder="Your email address">
-            <button class="normal">Sign Up</button>
+        <div id="subtotal">
+            <h3>Cart Total</h3>
+            <table>
+                <tr>
+                    <td>Cart Subtotal</td>
+                    <td>$455</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td><strong>$455</strong></td>
+                </tr>
+            </table>
+            <button class="normal">Proceed to checkout</button>
         </div>
     </section>
 
