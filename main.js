@@ -28,3 +28,12 @@ for(let i = 0; i < smallimg.length; i++){
         mainImg.src = this.src
     }
 }
+
+// 
+// document.getElementById("add-to-cart").addEventListener('click', addToCart)
+
+// function addToCart() {
+//     let cartInput = document.getElementById("cart-input")
+//     let itemPrice = document.getElementById("item-price")
+//     itemPrice *= cartInput.value 
+// }
